@@ -9,6 +9,7 @@ import iView from 'iview'
 import 'iview/dist/styles/iview.css'
 import i18nZh from '@/i18n/zh/app'
 import i18nEn from '@/i18n/en/app'
+import store from './store'
 
 Vue.config.productionTip = false
 Vue.use(iView)
@@ -27,6 +28,7 @@ if (Language) {
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
 })
